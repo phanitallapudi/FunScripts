@@ -1,12 +1,14 @@
 #needs to run this command on terminal to compile (pip install forex-python)
 
-from forex_python.converter import CurrencyRates
+
+
+from forex_python.converter import *
 
 solution = CurrencyRates()
 
 def result(from_currency, to_currency, amount):
     answer = solution.convert(from_currency, to_currency, amount)
-    return (f"The amount {amount} is converted from {from_currency} to {to_currency} and it is {answer}")
+    return ("The amount {} is converted from {} to {} and it is {}".format(amount, from_currency, to_currency, round(answer, 2)))
 
 
 try:
