@@ -1,3 +1,5 @@
+#needs to run this command on terminal to compile (pip install forex-python)
+
 from forex_python.converter import CurrencyRates
 
 solution = CurrencyRates()
