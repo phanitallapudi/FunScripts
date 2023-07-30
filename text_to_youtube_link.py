@@ -1,3 +1,5 @@
+#pip install youtubesearchpython
+
 from youtubesearchpython import VideosSearch
 
 videosSearch = VideosSearch('Believer Imagine Dragons', limit = 1)
